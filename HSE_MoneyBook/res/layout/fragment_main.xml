@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:graph="http://schemas.android.com/apk/res/com.hse.moneybook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hse.moneybook.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/messageText"
+        android:layout_marginBottom="4dp" >
+
+        <com.echo.holographlibrary.PieGraph
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            graph:pieInnerCircleRatio="130" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/out_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/out_money"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_back"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/in_money"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/out_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_back"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/in_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_back"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HSE_MoneyBook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">せってい</string>
+    <string name="action_next">つぎへ</string>
+    <string name="action_prev">まえへ</string>
+    <string name="action_manual">せつめいしょ</string>
+    <string name="action_csv_output">CSVしゅつりょく</string>
+	<string name="action_delete">けす</string>
+    <string name="menu_year">ねんべつ</string>
+    <string name="menu_month">つきべつ</string>
+    <string name="menu_day">ひべつ</string>
+    
+    <string name="FILTER_KEY">FILTER_MODE</string>
+    <string name="GRAPH_KEY">SHOW_GRAPH</string>
+    <string name="SHARED_PREFERENCE_NAME">Settings</string>
+</resources>

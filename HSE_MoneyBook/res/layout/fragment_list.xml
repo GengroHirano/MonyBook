@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hse="http://schemas.android.com/apk/res/com.hse.moneybook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ListView 
+        android:id="@+id/moneyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoiceModal"
+        android:divider="@drawable/divider"
+        android:layout_above="@+id/sumArea">
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/sumArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:orientation="horizontal" >
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/PurchaseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ごうけい"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Money"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:text="えん"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/Unit"
+            android:gravity="right"
+            android:text="250"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+    </RelativeLayout>
+    
+    
+	<com.hse.ui.CustomTextView
+	    android:id="@+id/emptyView"
+	    android:text="なんにもないよ"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="24sp"
+	    hse:customFont="aquafont.ttf" />
+</RelativeLayout>

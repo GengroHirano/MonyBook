@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="true"
+        android:scrollbars="none"
+        android:spinnersShown="false" />
+
+    <Space
+        android:id="@+id/layoutSpace"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/datePicker" />
+
+    <RelativeLayout
+        android:id="@+id/dialogButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutSpace"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="124dp"
+            android:layout_height="72dp"
+            android:background="@drawable/button_back"
+            android:text="OK!" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="124dp"
+            android:layout_height="72dp"
+            android:background="@drawable/button_back"
+            android:layout_toRightOf="@id/positiveButton"
+            android:layout_alignBaseline="@id/positiveButton"
+            android:text="きゃんせる" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/dialogButtonLayout" />
+
+</RelativeLayout>

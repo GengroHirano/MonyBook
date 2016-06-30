@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        
+        <item name="android:dropDownListViewStyle">@style/MyPopupMenuListView</item>
+        <item name="android:popupMenuStyle">@style/MyListPopupMenu</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomOverFlow</item>
+    </style>
+	
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#00ffffff</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:displayOptions"></item>
+    </style>
+    
+    <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    
+    <style name="MyPopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">2dp</item>
+    </style>
+    
+    <style name="MyListPopupMenu" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+	</style>
+    
+    <style name="CustomOverFlow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+    </style>
+</resources>

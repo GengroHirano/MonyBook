@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hse="http://schemas.android.com/apk/res/com.hse.moneybook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <com.hse.ui.CustomTextView
+        android:id="@+id/DateOfPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2014/8/25"
+        android:textColor="@android:color/black"
+        hse:customFont="aquafont.ttf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/PurchaseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ひじき"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Money"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:text="えん"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+
+        <com.hse.ui.CustomTextView
+            android:id="@+id/Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/Unit"
+            android:gravity="right"
+            android:text="250"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            hse:customFont="aquafont.ttf" />
+        
+        <CheckBox
+            android:id="@+id/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/Money"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:button="?android:attr/listChoiceIndicatorMultiple" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

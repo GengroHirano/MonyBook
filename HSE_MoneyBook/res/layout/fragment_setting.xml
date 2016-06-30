@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hse="http://schemas.android.com/apk/res/com.hse.moneybook"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/FilterSettingArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <com.hse.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ひょうじ"
+            android:textSize="24sp"
+            hse:customFont="aquafont.ttf" />
+
+        <RadioGroup
+            android:id="@+id/filterGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.hse.ui.CustomRadioButton
+                android:id="@+id/filterYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ねんべつ"
+                android:textSize="18sp"
+                hse:customFont="aquafont.ttf" />
+
+            <com.hse.ui.CustomRadioButton
+                android:id="@+id/filterMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="つきべつ"
+                android:textSize="18sp"
+                hse:customFont="aquafont.ttf" />
+
+            <com.hse.ui.CustomRadioButton
+                android:id="@+id/filterDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ひべつ"
+                android:textSize="18sp"
+                hse:customFont="aquafont.ttf" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ShowGraphSettingArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FilterSettingArea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <com.hse.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="たいとるのぐらふ"
+            android:textSize="24sp"
+            hse:customFont="aquafont.ttf" />
+
+        <RadioGroup
+            android:id="@+id/showGraphGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.hse.ui.CustomRadioButton
+                android:id="@+id/showGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="だす　　"
+                android:textSize="18sp"
+                hse:customFont="aquafont.ttf" />
+
+            <com.hse.ui.CustomRadioButton
+                android:id="@+id/hiddenGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ださない"
+                android:textSize="18sp"
+                hse:customFont="aquafont.ttf" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ShowGraphSettingArea"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_back"
+        android:text="せってい"
+        android:textSize="24sp" />
+
+    <Button 
+        android:id="@+id/licenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commitButton"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_back"
+        android:text="らいせんす"
+        android:textSize="24sp" />
+    
+</RelativeLayout>
